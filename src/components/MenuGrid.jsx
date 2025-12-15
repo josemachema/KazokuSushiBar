@@ -52,11 +52,7 @@ const MenuGrid = ({ categories, onSelectDish }) => {
             </div>
 
             <div className="container mx-auto px-4 md:px-6">
-                <div className="text-center mb-8 md:mb-12">
-                    <h3 className="text-2xl md:text-5xl font-bold font-display bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent animate-pulse">
-                        {t.menu.title}
-                    </h3>
-                </div>
+
 
                 <AnimatePresence mode="wait">
                     {activeSection && (
