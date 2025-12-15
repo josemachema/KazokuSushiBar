@@ -78,7 +78,17 @@ const Layout = ({ children }) => {
             </main>
             <footer className="py-12 border-t border-white/10 mt-20">
                 <div className="container mx-auto px-6 text-center text-white/40 text-sm">
-                    &copy; {new Date().getFullYear()} Kazoku Sushi Bar. {t.footer.text}
+                    <p className="mb-4">&copy; {new Date().getFullYear()} Kazoku Sushi Bar. {t.footer.text}</p>
+                    <a
+                        href="https://desertbyte.com.mx/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center space-x-2 opacity-50 hover:opacity-100 transition-opacity w-fit mx-auto"
+                    >
+                        <span>Elaborado por</span>
+                        <img src="/images/desertbyte-logo.png" alt="Desert Byte" className="h-6 w-auto" />
+                        <span>Desert Byte</span>
+                    </a>
                 </div>
             </footer>
         </div>
